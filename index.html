@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +12,388 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link rel="stylesheet" href="comingsoon.css">
-  </head>
-  <body>
-      <div class="container text-center">
-          <header class="mt-4">
-              <img src="splash.png" class="img-fluid" width="400px">
-          </header>
-          <hr>
-          <section>
-              <h3>Coming Soon...</h3>
-              <h2 class="mt-3 mb-3">
-                  <a href="https://www.linkedin.com/in/miguelpwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-linkedin"></span></a>
-                  <a href="https://github.com/miguelperezwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-github"></span></a>
-              </h2>
-          </section>
-          <hr>
-          <footer>
-              <p>Copyright &copy; 2020. Miguel Pérez, Web Developer.</p>
-          </footer>
+    <link rel="stylesheet" href="css/comingsoon.css">
+</head>
+<body>
+    <div class="text-center">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" class="img-fluid" style="width:150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#aboutme"><i class="fa fa-user"></i> About Me</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#skills"><i class="fa fa-cog"></i> Skills</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#services"><i class="fa fa-list"></i> Services</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+      
+        <!-- About Me Section -->
+        <section id="aboutme" class="text-light" style="padding:35px;padding-top:150px;padding-top:150px;">
+            <div class="container text-justify">
+                <h3 class="text-center"><span class="fa fa-user"></span> <strong>ABOUT ME</strong></h3>
+                <hr>
+                <img src="img/miguel.jpg" class="img-fluid img-thumbnail rounded-circle float-left mr-2" style="width:150px;margin:10px;">
+                <p>I'm a Senior Web Application Developer and IT Professional based in Mao, Dominican Republic. With experience on fully automated DevOps environments I enjoy working on usable, clean and practical web sites and web apps. More than 7 years of experience in the field of Information Technology (systems administration, networking, databases and IT Consulting in general). Enthusiast of emerging technologies and open source. I speak English, Spanish and have some skills speaking French.</p>
+                <strong><span class="fab fa-whatsapp mr-1"></span> <a href="tel:(829)703-6622">(829)703-6622</a></strong><br>
+                <strong><span class="far fa-envelope mr-1"></span> <a href="mailto:ingmiguelperezr@gmail.com" target="_blank">ingmiguelperezr@gmail.com</a></strong><br>
+                <h4 class="mt-3">
+                    <a href="https://www.linkedin.com/in/miguelpwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-linkedin"></span></a>
+                    <a href="https://github.com/miguelperezwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-github"></span></a>
+                </h4>
+            </div>
+        </section>
 
-          <!-- JS -->
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      </div>
-  </body>
+        <!-- Skills Section -->
+        <section id="skills" class="text-light" style="padding:35px;padding-top:150px;">
+            <div class="container">
+                <h2><span class="fa fa-cog"></span> <strong>SKILLS</strong></h2>
+                <hr>
+
+                <!-- WD Skills -->
+                <h3>Web Development & Design</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>HTML & CSS</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>PHP MVC</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>JavaScript</strong></p>
+                                <p class="card-text">
+                                    <span class="count">75</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>Bootstrap</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>Laravel Framework</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>Git</strong></p>
+                                <p class="card-text">
+                                    <span class="count">85</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <p><strong>WordPress</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT General Skills -->
+                <h3 class="mt-3">Information Technology</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Azure</strong></p>
+                                <p class="card-text">
+                                    <span class="count">97</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Windows Servers</strong></p>
+                                <p class="card-text">
+                                    <span class="count">93</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Linux Servers</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>YAML</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Azure DevOps</strong></p>
+                                <p class="card-text">
+                                    <span class="count">99</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Active Directory</strong></p>
+                                <p class="card-text">
+                                    <span class="count">97</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>AWS</strong></p>
+                                <p class="card-text">
+                                    <span class="count">85</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>PowerShell</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>SQL</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Exchange Server</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>Subnetting</strong></p>
+                                <p class="card-text">
+                                    <span class="count">95</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-secondary mb-3">
+                            <div class="card-body">
+                                <p><strong>IT Project Management</strong></p>
+                                <p class="card-text">
+                                    <span class="count">90</span>%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#portfolio" class="btn btn-primary"><span class="fa fa-briefcase"></span> View Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" style="padding:35px;padding-top:150px;">
+            <div class="container">
+                <h3><span class="fa fa-list"></span> <strong>SERVICES</strong></h3>
+                <hr>
+                <p><strong>My list of consulting services includes:</strong></p>
+                <table class="table table-striped table-bordered text-left text-light">
+                    <tbody>
+                        <tr>
+                            <td>CI/CD Pipelines Setup</td>
+                            <td>Web Design / Development</td>
+                        </tr>
+                        <tr>
+                            <td>System Administration - Windows / Linux</td>
+                            <td>AWS Administration</td>
+                        </tr>
+                        <tr>
+                            <td>Network Administration</td>
+                            <td>Azure DevOps Administration</td>
+                        </tr>
+                        <tr>
+                            <td>Web Hosting Management</td>
+                            <td>IT Security</td>
+                        </tr>
+                        <tr>
+                            <td>Windows Server Administration</td>
+                            <td>ServiceNow Development</td>
+                        </tr>
+                        <tr>
+                            <td>Exchange Server Implementation</td>
+                            <td>Linux Server Implementation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="text-light" style="padding:35px;padding-top:150px;">
+            <div class="container">
+                <h3><span class="fa fa-briefcase"></span> <strong>PORTFOLIO</strong></h3>
+                <hr>
+                <!-- Websites -->
+                <div class="row">
+                    <div class="col-lg-4 mt-2">
+                        <img src="img/portfolio/puntualizando.jpg" class="img-thumbnail" width="250px">
+                        <br><br>
+                        <h5><strong>Puntualizando.net</strong></h5>
+                        <p>Logo Design, WordPress Implementation and Tech Support.</p>
+                        <a href="https://puntualizando.net/" target="_blank" class="btn btn-secondary" role="button"><span class="fa fa-globe"></span> Visit website</a>
+                    </div>
+                    <div class="col-lg-4 mt-2">
+                        <img src="img/portfolio/opm.jpg" class="img-thumbnail" width="250px">
+                        <br><br>
+                        <h5><strong>OnlinePrestigeManagement.com</strong></h5>
+                        <p>Complete site translation for Spanish version.</p>
+                        <a href="http://onlineprestigemanagement.com/es/inicio/" target="_blank" class="btn btn-secondary" role="button"><span class="fa fa-globe"></span> Visit website</a>
+                    </div>
+                    <div class="col-lg-4 mt-2">
+                        <img src="img/portfolio/penasmart.png" class="img-thumbnail" width="250px" height="160px">
+                        <br><br>
+                        <h5><strong>Peña Smart Electronics</strong></h5>
+                        <p>WordPress Implementation, WooCommerce, SSL Certificate and Tech Support.</p>
+                        <a href="https://www.penasmartelectronics.com/" target="_blank" class="btn btn-secondary" role="button"><span class="fa fa-globe"></span> Visit website</a>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6 mt-2">
+                        <img src="img/portfolio/hc.png" class="img-thumbnail" width="250px">
+                        <br><br>
+                        <h5><strong>HappyCoffeeMao.com</strong></h5>
+                        <p>WordPress Implementation, Template Customization, WooCommerce, SSL Certificate and Webmail.</p>
+                        <a href="http://www.happycoffeemao.com/web" target="_blank" class="btn btn-secondary" role="button"><span class="fa fa-globe"></span> Visit website</a>
+                    </div>
+                    <div class="col-lg-6 mt-2">
+                        <img src="img/portfolio/em.png" class="img-thumbnail" width="250px">
+                        <br><br>
+                        <h5><strong>EmpresasMorel.com</strong></h5>
+                        <p>Index Remodelation, WordPress Implementation and Template Customization.</p>
+                        <a href="https://www.empresasmorel.com/" target="_blank" class="btn btn-secondary" role="button"><span class="fa fa-globe"></span> Visit website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="padding:35px;padding-top:150px;">
+            <div class="container">
+                <h3><span class="fa fa-envelope"></span> <strong>CONTACT</strong></h3>
+                <hr>
+                <strong><span class="fab fa-whatsapp mr-1"></span> <a href="tel:(829)703-6622">(829)703-6622</a></strong><br>
+                <strong><span class="fa fa-envelope mr-1"></span> <a href="mailto:ingmiguelperezr@gmail.com" target="_blank">ingmiguelperezr@gmail.com</a></strong><br>
+                <strong><span class="fa fa-map-marker"></span> Mao, Valverde, Dominican Republic</strong>
+                <h4 class="mt-3 mb-3">
+                    <a href="https://www.linkedin.com/in/miguelpwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-linkedin"></span></a>
+                    <a href="https://github.com/miguelperezwd" target="_blank" class="btn btn-lg btn-outline-light"><span class="fab fa-github"></span></a>
+                </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1328564.7175532358!2d-70.94212010315908!3d18.78896948748201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1a43637836ed9%3A0xa5a56bf88ac610c6!2sMao!5e0!3m2!1sen!2sdo!4v1507413949709" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer class="mb-3">
+            <p>Copyright &copy; 2020. Miguel Pérez, Web Developer.</p>
+        </footer>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </div>
+</body>
 </html>
+<!-- Thank you for reading until this line! And yes, this website only has HTML, CSS and JS :) -->
